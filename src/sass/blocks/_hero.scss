@@ -1,3 +1,39 @@
 .hero {
-    
+    background: url('../img/bg/hero-bg.png') left center / cover no-repeat;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+    }
+    &__reasons {
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        display: flex;
+        gap: 15px;
+        &_item {
+            background: linear-gradient(180deg, #FFAC02 0%, #51441F 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    &__title {
+        font-size: 56px;
+        font-weight: 700;
+        text-transform: uppercase;
+        background: linear-gradient(180deg, #413829 0%, #655F54 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    &__txt{
+        color: #13110E;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
 }
