@@ -12,9 +12,24 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="wrapper">
-            
+            <div class="header__wrapper">
+                <a href="#" class="header__logo"><img src="icons/logo.png" alt=""></a>
+                <nav class="header__menu">
+                    <ul class="header__menu_list">
+                        <li class="header__menu_item"><a href="#" class="header__menu_link">Главная</a></li>
+                        <li class="header__menu_item"><a href="#" class="header__menu_link">Услуги</a></li>
+                        <li class="header__menu_item"><a href="#" class="header__menu_link">Обо мне</a></li>
+                        <li class="header__menu_item"><a href="#" class="header__menu_link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header__contacts">
+                    <a href="tel:+79213064556" class="header__phone">+7 (921) 306-45-56</a>
+                    <span class="header__adress">г. СПб, ул. Захарьевская 17</span>
+                    <span class="header__btn button">Перезвоните мне</span>
+                </div>
+            </div>
         </div>
     </header>
     <section id="hero" class="hero">
@@ -40,17 +55,27 @@
                         Шопоголизм
                     </span>
                 </div>
-                <h1 class="hero__title">Помощь зависимым <br>в санкт-петербурге</h1>
+                <h1 class="hero__title w-70">Помощь зависимым в санкт-петербурге</h1>
                 <h2 class="subtitle hero__subtitle">
                     и психологическая поддержка близких
                 </h2>
-                <span class="hero__txt">Я помогаю людям, кто осознал свою <br> зависимость и готов действовать.</span>
+                <span class="hero__txt w-40">Я помогаю людям, кто осознал свою зависимость и готов действовать.</span>
                 <span class="button">Получить 15 мин. консультацию</span>
                 <div class="hero__blocks">
                     <div class="hero__block">
                         <img src="icons/shield.png" alt="" class="hero__icon">
                         <span class="hero__block_title">конфиденциальность</span>
-                        <p class="hero__block_txt">Строго соблюдаю клиентскую тайну</p>
+                        <p class="hero__block_txt w-60">Строго соблюдаю клиентскую тайну</p>
+                    </div>
+                    <div class="hero__block">
+                        <img src="icons/secure.png" alt="" class="hero__icon">
+                        <span class="hero__block_title">безопасность</span>
+                        <p class="hero__block_txt w-60">С заботой о вашем будущем</p>
+                    </div>
+                    <div class="hero__block">
+                        <img src="icons/chating.png" alt="" class="hero__icon">
+                        <span class="hero__block_title">безоценочность</span>
+                        <p class="hero__block_txt w-60">Понимаю и принимаю любой опыт клиента</p>
                     </div>
                 </div>
             </div>

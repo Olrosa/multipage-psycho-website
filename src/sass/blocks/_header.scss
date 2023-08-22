@@ -1,5 +1,83 @@
-header {
+.header {
     position: absolute;
-    width: 100vw;
-    
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 20px 0;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__menu {
+        &_list {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+        &_link {
+            text-decoration: none;
+            color: #42372A;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-transform: uppercase;
+        }
+    }
+    &__contacts {
+        display: grid;
+        grid-template: 1fr 1fr / auto auto;
+        align-items: center;
+        gap: 5px 20px;
+    }
+    &__adress {
+        color: #42372A;
+        text-align: right;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        grid-column: 1;
+    }
+    &__phone {
+        color: #42372A;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-decoration-line: underline;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        &::before {
+            content: '';
+            display: block;
+            height: 5px;
+            width: 5px;
+            border-radius: 100%;
+            background-color: #81D032;
+
+
+        }
+    }
+    &__btn {
+        grid-row: 1 / 3;
+        grid-column: 2;
+        padding: 15px 20px;
+        color: #F0E8DD;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: none;
+    }
 }
