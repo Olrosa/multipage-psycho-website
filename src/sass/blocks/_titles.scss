@@ -46,3 +46,10 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+@media (max-width: 768px) {
+    .title-bold {
+        font-size: 28px;
+    } 
+    
+}

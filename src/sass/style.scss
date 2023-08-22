@@ -25,6 +25,14 @@ body {
     font-weight: bold;
 }
 
+@media (max-width: 576px) {
+    .wrapper {
+        padding: 0 20px;
+        max-width: 1180px;
+        margin: 0 auto;
+    } 
+}
+
 @import 'blocks/titles';
 @import 'blocks/widths';
 @import 'blocks/header';
