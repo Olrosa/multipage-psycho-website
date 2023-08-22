@@ -21,7 +21,13 @@ body {
     margin: 0 auto;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 @import 'blocks/buttons';
 @import 'blocks/titles';
+@import 'blocks/widths';
 @import 'blocks/header';
 @import 'blocks/hero';
+@import 'blocks/about';

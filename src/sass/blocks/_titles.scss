@@ -22,3 +22,27 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.title-bold {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #413829 0%, #4B473F 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} 
+
+.title-normal {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 54px */
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #413829 0%, #655F54 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
