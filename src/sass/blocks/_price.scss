@@ -48,7 +48,7 @@
     }
     &__descr {
         margin-top: 30px;
-        min-height: 85px;
+        min-height: 132px;
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
@@ -65,6 +65,7 @@
     }
     &__cost {
         margin-top: 20px;
+        margin-bottom: 20px;
         font-size: 22px;
         font-style: normal;
         font-weight: 600;
@@ -161,6 +162,34 @@
         &__btn {
             font-size: 12px;
             width: 100%;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .price {
+        &__subtitle {
+            width: 80%;
+            text-align: center;
+            margin: 0 auto;
+        }
+        &__descr {
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 20px;
+            text-align: center;
+            min-height: 20px;
+        }
+        &__more {
+            text-align: center;
+            margin-top: 10px;
+        }
+        &__cost {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        &__card {
+            min-height: 300px;
         }
     }
 }
