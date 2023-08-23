@@ -118,6 +118,7 @@
 
 @media (max-width: 768px) {
     .hero {
+        padding-top: 120px;
         &__stamp {
             width: 150px;
             height: 150px;
@@ -139,6 +140,7 @@
 
 @media (max-width: 576px) {
     .hero {
+        padding-top: 90px;
         overflow: hidden;
             background: url('../img/bg/hero-mobile-bg.png') center center / cover no-repeat;
         &__reasons {

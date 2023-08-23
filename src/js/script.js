@@ -24,4 +24,59 @@ window.addEventListener('DOMContentLoaded', function() {
         //     });
         // }
     }
+    //slider
+    const swiper = new Swiper('.slider', {
+        slidesPerView: 1,
+        navigation: {
+            nextEl: '.slider__arrow_next',
+            prevEl: '.slider__arrow_prev',
+        },
+    });
+
+    //modals
+    const openModalButtons = document.querySelectorAll('.open-modal');
+    const overlays = document.querySelectorAll('.overlay');
+    const body = document.querySelector('body');
+    // const overlay = document.querySelector('.overlay');
+
+    function openModal(modalId) {
+        if(overlays) {
+            const modal = document.querySelector(`.modal[data-modal="${modalId}"]`);
+            if(modal) {
+                let overlay = modal.parentNode.parentNode;
+                overlay.style.display = 'block';
+                modal.style.display = 'block';
+                body.classList.add('modal-active');
+                currentModal = modal;
+            }
+        }
+    }
+    if(overlays) {
+        const modalClose = document.querySelectorAll('.modal__close');
+        openModalButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const modalId = button.dataset.modal;
+                openModal(modalId);
+            });
+        });
+        overlays.forEach(overlay => {
+            overlay.addEventListener('click', event => {
+                if (event.target === overlay) {
+                    overlay.style.display = 'none';
+                    currentModal.style.display = 'none';
+                    currentModal = null;
+                    body.classList.remove('modal-active');
+                }
+            });
+        });
+        modalClose.forEach(close => {
+            close.addEventListener('click', () => {
+                const overlay = currentModal.parentNode.parentNode;
+                overlay.style.display = 'none';
+                currentModal.style.display = 'none';
+                currentModal = null;
+                body.classList.remove('modal-active');
+            })
+        });
+    }
 });

@@ -14,6 +14,9 @@ html {
 
 body {
     position: relative;
+    &.modal-active {
+        overflow: hidden;
+    }
 }
 
 .wrapper {
@@ -44,6 +47,7 @@ body {
 @import 'blocks/header';
 @import 'blocks/hero';
 @import 'blocks/about';
+@import 'blocks/education';
 @import 'blocks/help';
 @import 'blocks/problems';
 @import 'blocks/price';
@@ -51,3 +55,4 @@ body {
 @import 'blocks/blog';
 @import 'blocks/solution';
 @import 'blocks/modal';
+@import 'blocks/slider';

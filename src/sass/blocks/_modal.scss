@@ -1,8 +1,17 @@
 .overlay {
-    position: relative;
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(5px);
+    display: none;
+    padding: 40px 0;
 }
 .modal {
     width: 100%;
+    height: 100%;
     padding: 20px;
     border-radius: 20px;
     border: 1px solid rgba(176, 139, 35, 0.30);
