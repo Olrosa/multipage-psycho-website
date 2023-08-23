@@ -1,4 +1,5 @@
 .hero {
+    position: relative;
     padding: 160px 0 140px 0;
     background: url('../img/bg/hero-bg.png') left center / cover no-repeat;
     &__wrapper {
@@ -8,6 +9,7 @@
 
     }
     &__reasons {
+        flex-wrap: wrap;
         font-size: 16px;
         font-weight: 700;
         text-transform: uppercase;
@@ -41,6 +43,7 @@
         display: flex;
         align-items: center;
         gap: 35px;
+        margin-top: 50px;
     }
     &__icon {
         width: 45px;
@@ -48,7 +51,7 @@
         object-fit: contain;
     }
     &__block {
-        max-width: fit-content;
+        max-width: min-content;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -68,6 +71,110 @@
             font-weight: 400;
             line-height: normal;
             color: var(--black-color);            
+        }
+    }
+    &__stamp {
+        position: absolute;
+        height: 250px;
+        width: 250px;
+        right: 80px;
+        top: 140px;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+            transform: rotate(6deg);
+        }
+    }
+    &__btn {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .hero {
+        &__title {
+            width: auto;
+        }
+        &__stamp {
+            top: 270px;
+            width: 200px;
+            height: 200px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .hero {
+        &__title {
+            font-size: 38px;
+        }
+        &__stamp {
+            top: 50%;
+            transform: translateY(-50%) rotate(6deg);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        &__stamp {
+            width: 150px;
+            height: 150px;
+            right: 10px;
+        }
+        &__blocks {
+            flex-direction: column;
+        }
+        &__block {
+            width: auto;
+            max-width: none;
+            align-items: center;
+            &_txt {
+                width: auto !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        overflow: hidden;
+            background: url('../img/bg/hero-mobile-bg.png') center center / cover no-repeat;
+        &__reasons {
+            justify-content: center;
+            font-size: 10px;
+        }
+        &__title {
+            font-size: 24px;
+            text-align: center;     
+        }
+        &__subtitle {
+            text-align: center;
+        }
+        &__txt {
+            width: auto;
+            text-align: center;
+            font-size: 15px;
+        }
+        &__btn {
+            padding: 20px;
+            font-size: 12px;
+            align-self: center;
+            margin: 0;
+        }
+        &__stamp {
+            height: 100px;
+            width: 100px;
+            right: -15px;
+        }
+        &__block {
+            &_title {
+                text-align: center;
+            }
+            &_txt {
+                text-align: center;
+            }
         }
     }
 }
