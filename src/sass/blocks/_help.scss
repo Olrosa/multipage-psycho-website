@@ -1,0 +1,198 @@
+.help {
+    position: relative;
+    padding: 50px 0;
+    background: url('../img/bg/help_bg.png') center center / cover no-repeat;
+    &__card {   
+        border-radius: 20px;
+        border: 1px solid rgba(176, 139, 35, 0.30);
+        background: #F8F2E8;
+        width: 100%;
+        margin: 0 auto;
+        &:nth-child(1) {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &__title {
+        display: block;
+        text-align: center;
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    &__subtitle {
+        color: #42372A;
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 27px */
+        margin-top: 10px;
+    }
+    &__wrapper {
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 30px;
+        border-radius: 10px;
+        border: 1px dashed #B08B23;
+        background: #F8F2E8;
+        &:last-child {
+            width: 100%;
+            border: none;
+            justify-content: space-between;
+        }
+    }
+    &__item {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        /* justify-content: space-between; */
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 27px */
+        &-col {
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+    &__icon {
+        width: 40px;
+        height: 40px;
+    }
+    &__tel {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-decoration-line: underline;
+        color: #42372A;
+        text-align: center;
+    }
+    &__form {
+        &-btn {
+            margin-top: 10px;
+            width: 200px;
+            padding: 14px 0;
+            text-transform: none;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+        &-name {
+            padding: 16px 50px;
+            border-radius: 10px;
+            border: 1px solid rgba(66, 55, 42, 0.29);
+            background: #FFF;
+            width: 200px;
+            &::placeholder {
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                color: #42372A;
+            }
+        } 
+        &-tel {
+            padding: 16px 50px;
+            border-radius: 10px;
+            border: 1px solid rgba(66, 55, 42, 0.29);
+            background: #FFF;
+            width: 350px;
+            &::placeholder {
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                color: #42372A;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .help {
+        &__wrapper {
+            padding: 10px 20px;
+            width: 100%;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        &__item {
+            &-col {
+                width: 40%;
+                &:nth-child(3) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .help {
+        &__title {
+            width: 100%;
+        }
+        &__item {
+            &-col {
+                width: 100%;
+                gap: 10px;
+            }
+        }
+        &__wrapper {
+            flex-direction: column;
+            &:nth-child(1) {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        &__form {
+            .help__item {
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
+            }
+            &-tel {
+                width: 300px;
+            }
+            &-name {
+                width: 300px;
+            }
+        }
+        &__item {
+            align-items: start;
+        }
+        &__item-col {
+            &:last-child {
+                align-items: start;
+            }
+        }
+        
+    }
+}
+
+@media (max-width: 576px) {
+    .help {
+        &__form {
+            display: none;
+        }
+        &__item {
+            align-items: center;
+            font-size: 14px;
+            &-col {
+                &:last-child {
+                    display: none;
+                }
+            }
+        }
+        &__subtitle {
+            font-size: 14px;
+        }
+    }
+}

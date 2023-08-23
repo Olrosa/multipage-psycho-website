@@ -17,13 +17,25 @@ body {
 }
 
 .wrapper {
-    max-width: 1220px;
-    padding: 0 20px;
+    padding: 0 10px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .bold {
     font-weight: bold;
+}
+
+.hide {
+    display: none;
+}
+
+@media (max-width: 576px) {
+    .wrapper {
+        padding: 0 20px;
+        max-width: 1180px;
+        margin: 0 auto;
+    } 
 }
 
 @import 'blocks/buttons';
@@ -32,3 +44,9 @@ body {
 @import 'blocks/header';
 @import 'blocks/hero';
 @import 'blocks/about';
+@import 'blocks/help';
+@import 'blocks/problems';
+@import 'blocks/price';
+@import 'blocks/stories';
+@import 'blocks/blog';
+@import 'blocks/solution';
