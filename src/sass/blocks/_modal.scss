@@ -1,0 +1,142 @@
+.overlay {
+    position: relative;
+}
+.modal {
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(176, 139, 35, 0.30);
+    background: #F8F2E8;
+    &__card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 80px 0;
+        border-radius: 20px;
+        border: 1px solid rgba(176, 139, 35, 0.30);
+        background: #F8F2E8;
+    }
+    &__title {
+        text-align: center;
+        margin: 0 auto;
+        width: 50%;
+    }
+    &__subtitle {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 27px */
+        text-align: center;
+        color: #42372A;
+    }
+    &__btn {
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    &__ps {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 27px */
+        opacity: 0.6;
+        text-align: center;
+    }
+    &__close {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        cursor: pointer;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-name {
+            margin-top: 30px;
+            padding: 17px 0;
+            width: 320px;
+            border-radius: 10px;
+            border: 1px solid rgba(66, 55, 42, 0.29);
+            background: #FFF;
+            &::placeholder {
+                text-align: center;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                color: #42372A;
+            }
+        }
+        &-tel {
+            margin-top: 10px;
+            padding: 17px 0;
+            width: 320px;
+            border-radius: 10px;
+            border: 1px solid rgba(66, 55, 42, 0.29);
+            background: #FFF;
+            &::placeholder {
+                text-align: center;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                color: #42372A;
+            }
+        }
+        &-btn {
+            margin-top: 20px;
+            padding: 17px 0;
+            width: 320px;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .modal {
+        &__close {
+            width: 70px;
+            height: 70px;
+            right: 25px;
+            top: 25px;
+        }
+        &__title {
+            font-size: 24px;
+            width: 80%;
+        }
+        &__subtitle {
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .modal {
+        .modal {
+            &__title {
+                font-size: 20px;
+                width: 80%;
+            }
+            &__subtitle {
+                width: 80%;
+                margin: 0 auto;
+            }
+            &__form {
+                &-name {
+                    width: 80%;
+                }
+                &-tel {
+                    width: 80%;
+                }
+                &-btn {
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
