@@ -10,6 +10,7 @@
 
 html {
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -108,3 +109,4 @@ input::placeholder {
 @import 'blocks/solution';
 @import 'blocks/modal';
 @import 'blocks/slider';
+@import 'blocks/footer';

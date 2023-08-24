@@ -31,6 +31,7 @@ window.addEventListener('DOMContentLoaded', function() {
             nextEl: '.slider__arrow_next',
             prevEl: '.slider__arrow_prev',
         },
+        loop: true,
     });
 
     //modals
@@ -77,6 +78,20 @@ window.addEventListener('DOMContentLoaded', function() {
                 currentModal = null;
                 body.classList.remove('modal-active');
             })
+        });
+    }
+
+    //header bg
+    let header = document.querySelector('.header');
+
+    if(header) {
+        window.addEventListener("scroll", function() {
+            let scrollY = window.scrollY;
+            if (scrollY > 0) {
+              header.style.backdropFilter = "blur(5px)";
+            } else {
+              header.style.backdropFilter = "none";
+            }
         });
     }
 });
