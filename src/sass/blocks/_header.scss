@@ -40,7 +40,6 @@
     &__adress {
         color: #42372A;
         text-align: right;
-        font-family: Montserrat;
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
@@ -50,7 +49,6 @@
     &__phone {
         color: #42372A;
         text-align: center;
-        font-family: Montserrat;
         font-size: 16px;
         font-style: normal;
         font-weight: 600;
@@ -236,6 +234,7 @@
                 font-size: 16px;
             }
             &__adress {
+                width: 80%;
                 font-size: 14px;
             }
             &__btn {
