@@ -10,6 +10,7 @@
 
 html {
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -75,3 +76,4 @@ body {
 @import 'blocks/solution';
 @import 'blocks/modal';
 @import 'blocks/slider';
+@import 'blocks/footer';

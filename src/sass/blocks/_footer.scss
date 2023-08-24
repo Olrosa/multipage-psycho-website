@@ -1,0 +1,134 @@
+.footer {
+    border-radius: 20px 20px 0px 0px;
+    border: 1px solid rgba(176, 139, 35, 0.40);
+    background: linear-gradient(0deg, #FEF9F1 0%, #FEF9F1 100%), #B8B8B8;
+    padding: 10px 10px 0 10px;
+    &__card {
+        border-radius: 20px 20px 0px 0px;
+        border: 1px solid rgba(176, 139, 35, 0.40);
+        background: linear-gradient(0deg, #FEF9F1 0%, #FEF9F1 100%), #B8B8B8;
+        box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.15);
+        padding: 40px 0;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    &__logo {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        &_img {
+            width: 150px;
+            max-height: 50px;
+            object-fit: contain;
+        }
+    }
+    &__politics {
+        color: #000;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        text-decoration-line: underline;
+    }
+    &__menu {
+        list-style-type: none;
+        flex-direction: column;
+        display: flex;
+        align-items: flex-start;
+        gap: 25px;
+        &_link {
+            text-decoration: none;
+            color: #42372A;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-transform: uppercase;
+        }
+    }
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__grid {
+        display: grid;
+        grid-template: repeat(3, auto) / repeat(2, auto);
+        gap: 5px 20px;
+    }
+    &__btn {
+        grid-row: 1 / 4;
+    }
+    &__navigation {
+        align-self: flex-end;
+        text-align: right;
+    }
+    &__social {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 15px;
+    }
+    .mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .footer {
+        &__grid {
+            grid-template-columns: auto;
+        }
+        &__btn {
+            grid-row: auto;
+            justify-self: flex-end;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        &__logo {
+            &_img {
+                width: 110px;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .footer {
+        &__card {
+            padding: 30px 0;
+        }
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__menu {
+            align-items: center;
+        }
+        &__grid {
+            justify-items: center;
+            gap: 10px;
+        }
+        &__btn {
+            justify-self: center;
+            padding: 18px 16px;
+            border-radius: 3px;
+            margin-top: 10px;
+        }
+        &__social {
+            justify-content: center;
+        }
+        .desktop {
+            display: none;
+        }
+        .mobile {
+            display: block;
+        }
+    }
+}

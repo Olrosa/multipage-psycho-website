@@ -1,10 +1,11 @@
 .header {
     z-index: 1;
-    position: absolute;
+    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     padding: 20px 0;
+    // transition: all .6s;
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -204,12 +205,18 @@
     }
     @media (max-width: 576px) {
         .header {
+            &__logo {
+                &.mobile {
+                    height: 40px;
+                }
+            }
             &__wrapper {
                 gap: 20px;
             }
             &__menu {
                 width: calc(100vw - 10px);
                 gap: 30px;
+                padding-bottom: 100px;
             }
             &__close {
                 right: 10px;
@@ -226,10 +233,13 @@
                 justify-content: flex-end;
             }
             &__phone {
-                font-size: 12px;
+                font-size: 16px;
             }
             &__adress {
-                font-size: 10px;
+                font-size: 14px;
+            }
+            &__btn {
+                padding: 18px 16px;
             }
         }
     }
