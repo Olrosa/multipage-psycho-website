@@ -86,6 +86,10 @@ input::placeholder {
     background: linear-gradient(0deg, #FEF9F1 0%, rgba(255, 255, 255, 0.00) 100%);
 }
 
+.tal {
+    text-align: left !important;
+}
+
 @media (max-width: 576px) {
     .wrapper {
         padding: 0 20px;

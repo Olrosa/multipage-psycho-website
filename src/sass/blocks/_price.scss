@@ -40,6 +40,7 @@
     &__subtitle {
         font-size: 24px;
         font-style: normal;
+        min-height: 60px;
         font-weight: 600;
         line-height: normal;
         background: linear-gradient(180deg, #413829 0%, #655F54 100%);
@@ -172,6 +173,7 @@
         &__subtitle {
             width: 80%;
             text-align: center;
+            min-height: 0px;
             margin: 0 auto;
         }
         &__descr {

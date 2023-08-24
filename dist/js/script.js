@@ -95,21 +95,3 @@ window.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
-
-document.addEventListener('DOMContentLoaded', function () {
-    const expandButtons = document.querySelectorAll('.text-btn');
-  
-    expandButtons.forEach(button => {
-      const initialText = button.textContent.trim();
-  
-      button.addEventListener('click', () => {
-        const container = button.closest('.price__card, .stories__item');
-        const openText = container.querySelector('.text-open');
-  
-        openText.classList.toggle('open');
-        button.textContent = openText.classList.contains('open') ? 'Свернуть' : initialText;
-  
-        closeOtherTexts(openText);
-      });
-    });
-  });
