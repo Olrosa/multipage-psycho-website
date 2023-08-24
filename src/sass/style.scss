@@ -52,6 +52,39 @@ body {
     display: block; /* Обязательно для перехода к полной высоте */
   }  
 
+input::placeholder {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.transition-up {
+    position: absolute;
+    width: 100%;
+    height: 71px;
+    top: 0;
+    transform: rotate(180deg);
+    flex-shrink: 0;
+    background: linear-gradient(0deg, #EEE8DD 0%, rgba(248, 242, 232, 0.00) 100%);
+}
+
+.transition-up-light {
+    position: absolute;
+    width: 100%;
+    height: 71px;
+    top: 0;
+    transform: rotate(180deg);
+    flex-shrink: 0;
+    background: linear-gradient(0deg, #FEF9F1 0%, rgba(255, 255, 255, 0.00) 100%);
+}
+
+.transition-bottom {
+    position: absolute;
+    width: 100%;
+    height: 71px;
+    bottom: 0;
+    flex-shrink: 0;
+    background: linear-gradient(0deg, #FEF9F1 0%, rgba(255, 255, 255, 0.00) 100%);
+}
+
 @media (max-width: 576px) {
     .wrapper {
         padding: 0 20px;

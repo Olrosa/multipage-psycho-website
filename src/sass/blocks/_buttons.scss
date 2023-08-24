@@ -15,4 +15,8 @@
     width: fit-content;
     text-decoration: none;
     cursor: pointer;
+    transition: .2s all;
+    &:hover {
+        background: #5B4D3C;
+    }
 }
