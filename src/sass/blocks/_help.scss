@@ -91,6 +91,7 @@
             background: #FFF;
             width: 200px;
             &::placeholder {
+                text-align: center;
                 font-size: 14px;
                 font-style: normal;
                 font-weight: 600;
@@ -105,6 +106,7 @@
             background: #FFF;
             width: 350px;
             &::placeholder {
+                text-align: center;
                 font-size: 14px;
                 font-style: normal;
                 font-weight: 600;

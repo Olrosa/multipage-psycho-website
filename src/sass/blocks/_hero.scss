@@ -41,7 +41,7 @@
     }
     &__blocks {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         gap: 35px;
         margin-top: 50px;
     }
@@ -126,6 +126,7 @@
         }
         &__blocks {
             flex-direction: column;
+            align-items: center;
         }
         &__block {
             width: auto;
