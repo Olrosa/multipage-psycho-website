@@ -82,15 +82,15 @@ window.addEventListener('DOMContentLoaded', function() {
     }
 
     //header bg
-    let header = document.querySelector('.header');
+    let header = document.querySelector('#header');
 
     if(header) {
         window.addEventListener("scroll", function() {
             let scrollY = window.scrollY;
             if (scrollY > 0) {
-              header.style.backdropFilter = "blur(5px)";
+                header.classList.add('header_active');
             } else {
-              header.style.backdropFilter = "none";
+                header.classList.remove('header_active');
             }
         });
     }
